@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#d5dbe5"/>
+  <rect x="0" y="0" width="480" height="720" fill="#111827" opacity=".48"/>
+  <rect x="480" y="0" width="800" height="720" fill="#fff"/>
+  <text x="526" y="62" font-family="Arial, 'PingFang SC', sans-serif" font-size="30" font-weight="700" fill="#111827">视频库</text>
+  <text x="628" y="62" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#6b7280">已过滤出符合场景要求的视频，推荐使用</text>
+  <text x="970" y="62" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" font-weight="700" fill="#2f63ff">AI生成</text>
+  <text x="1220" y="62" font-family="Arial" font-size="42" fill="#6b7280">×</text>
+
+  <rect x="512" y="104" width="716" height="520" rx="20" fill="#fff" stroke="#eef2f8"/>
+  <text x="552" y="152" font-family="Arial, 'PingFang SC', sans-serif" font-size="23" fill="#111827">文创私库　 原料库　 公共原料库　 版权视频片段　</text>
+  <text x="910" y="152" font-family="Arial, 'PingFang SC', sans-serif" font-size="23" font-weight="700" fill="#2f63ff">我的视频</text>
+  <line x1="910" y1="168" x2="1008" y2="168" stroke="#2f63ff" stroke-width="4"/>
+
+  <rect x="552" y="196" width="124" height="56" rx="10" fill="#0b5cff"/>
+  <text x="576" y="232" font-family="Arial, 'PingFang SC', sans-serif" font-size="21" font-weight="700" fill="#fff">上传视频</text>
+  <rect x="694" y="196" width="124" height="56" rx="10" fill="#0b5cff"/>
+  <text x="718" y="232" font-family="Arial, 'PingFang SC', sans-serif" font-size="21" font-weight="700" fill="#fff">视频工具</text>
+
+  <rect x="552" y="274" width="128" height="52" rx="9" fill="#f3f6fb"/>
+  <text x="574" y="307" font-family="Arial, 'PingFang SC', sans-serif" font-size="19" fill="#8a94a6">请输入视频</text>
+  <rect x="696" y="274" width="146" height="52" rx="9" fill="#f3f6fb"/>
+  <text x="724" y="307" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#111827">全部渠道⌄</text>
+  <rect x="858" y="274" width="146" height="52" rx="9" fill="#f3f6fb"/>
+  <text x="886" y="307" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#111827">全部视频⌄</text>
+  <rect x="1020" y="274" width="156" height="52" rx="9" fill="#f3f6fb"/>
+  <text x="1050" y="307" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#111827">更多筛选</text>
+
+  <line x1="960" y1="196" x2="960" y2="592" stroke="#e6ecf6"/>
+  <text x="998" y="230" font-family="Arial, 'PingFang SC', sans-serif" font-size="24" font-weight="700" fill="#111827">已选（0/1）</text>
+  <rect x="998" y="270" width="190" height="110" rx="10" fill="#f7faff"/>
+  <text x="1042" y="332" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#8a94a6">请选择 1 个视频</text>
+
+  <g transform="translate(552 354)">
+    <rect width="128" height="126" rx="8" fill="#eef4ff"/>
+    <circle cx="64" cy="62" r="24" fill="#111827" opacity=".45"/>
+    <text x="50" y="74" font-family="Arial" font-size="30" fill="#fff">▶</text>
+    <text x="0" y="162" font-family="Arial, 'PingFang SC', sans-serif" font-size="18" font-weight="700" fill="#111827">爆款前贴...</text>
+  </g>
+  <g transform="translate(704 354)">
+    <rect width="128" height="126" rx="8" fill="#eef4ff"/>
+    <circle cx="64" cy="62" r="24" fill="#111827" opacity=".45"/>
+    <text x="50" y="74" font-family="Arial" font-size="30" fill="#fff">▶</text>
+    <text x="0" y="162" font-family="Arial, 'PingFang SC', sans-serif" font-size="18" font-weight="700" fill="#111827">债务素材...</text>
+  </g>
+  <rect x="512" y="640" width="92" height="52" rx="9" fill="#dfe5f0"/>
+  <text x="538" y="673" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" font-weight="700" fill="#98a2b3">确定</text>
+  <rect x="620" y="640" width="92" height="52" rx="9" fill="#f0f3fa"/>
+  <text x="646" y="673" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#111827">取消</text>
+</svg>

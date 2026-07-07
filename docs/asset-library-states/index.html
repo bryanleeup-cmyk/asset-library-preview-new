@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>资产库合集管理交互状态说明</title>
+  <style>
+    :root {
+      color: #1f2937;
+      background: #f3f7ff;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 40px;
+    }
+    main {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 28px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.3;
+    }
+    .sub {
+      color: #64748b;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    section {
+      margin: 24px 0;
+      padding: 28px;
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 16px 40px rgba(47, 99, 255, .08);
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 24px;
+    }
+    h3 {
+      margin: 22px 0 10px;
+      font-size: 18px;
+    }
+    p, li {
+      color: #4b5563;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    img {
+      width: 100%;
+      margin: 12px 0 18px;
+      border-radius: 12px;
+      border: 1px solid #e4ebf5;
+      background: #fff;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 12px;
+      font-size: 15px;
+    }
+    th, td {
+      padding: 13px 14px;
+      border: 1px solid #e4ebf5;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f3f6fb;
+      color: #1f2937;
+    }
+    .pill {
+      display: inline-block;
+      margin: 0 8px 8px 0;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: #f2f6ff;
+      color: #2f63ff;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>资产库合集管理交互状态说明</h1>
+      <div class="sub">面向 UI / PM / 前端交接，覆盖投放库视频、投放库图片、原料库视频、原料库图片，以及可被生成链路调用的视频库抽屉。</div>
+    </header>
+
+    <section>
+      <h2>1. 当前页面基准</h2>
+      <img src="images/01-current-page.png" alt="当前页面基准" />
+      <p>页面保持 2.0 资产库原布局：合集独立放在素材列表上方；“全部视频 / 全部图片”标题单独占一行；筛选只作用于下方素材列表；多选批量操作栏保持吸底。</p>
+      <div>
+        <span class="pill">合集在上方</span>
+        <span class="pill">筛选不影响合集</span>
+        <span class="pill">批量栏吸底</span>
+        <span class="pill">文件夹文案统一为合集</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. 合集数量多</h2>
+      <img src="images/02-collection-overflow.svg" alt="合集数量多状态" />
+      <ul>
+        <li>标题显示总数，例如“合集（10）”。</li>
+        <li>默认展示一行，合集较多时出现左右翻页箭头。</li>
+        <li>越新建的合集越靠近“新建合集”，排在越前面。</li>
+        <li>一级合集最多 10 个，子合集最多 11 个，超过后禁用新建并 Toast 提示。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. 新建与重命名</h2>
+      <img src="images/03-create-rename-limit.svg" alt="新建与重命名状态" />
+      <ul>
+        <li>合集名称最多 20 个字，达到上限后不再继续输入。</li>
+        <li>计数器放在输入框内部右侧。</li>
+        <li>空名称不可提交；同一层级不允许重名。</li>
+        <li>创建成功使用带绿色对勾的成功 Toast。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 添加至合集</h2>
+      <img src="images/04-add-to-collection.svg" alt="添加至合集状态" />
+      <ul>
+        <li>添加是归类关系，素材仍保留在全部视频 / 全部图片中。</li>
+        <li>“全部视频 / 全部图片”是根视图，不可作为添加目标。</li>
+        <li>默认选中根视图时，“添加到此处”置灰；选中具体合集后才可点击。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. 进入合集与面包屑</h2>
+      <img src="images/07-breadcrumb-nested.svg" alt="进入合集与面包屑" />
+      <ul>
+        <li>面包屑表达层级：全部视频 &gt; 一级合集 &gt; 子合集。</li>
+        <li>上级可点击返回，最后一级为当前合集。</li>
+        <li>合集内多选只保留“从合集移除”，不再显示“添加至合集”。</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. 删除合集</h2>
+      <img src="images/05-delete-confirm.svg" alt="删除合集确认" />
+      <p>删除合集使用强二次确认。删除的是合集容器及其子合集，不删除素材本身；其中的视频 / 图片会回到“全部视频 / 全部图片”。</p>
+    </section>
+
+    <section>
+      <h2>7. 更多筛选</h2>
+      <img src="images/06-more-filter.svg" alt="更多筛选状态" />
+      <p>低频筛选统一收进“更多筛选”，减少主页面高度占用。浮层点击空白处关闭；筛选仅作用于下方素材列表，不影响上方合集。</p>
+    </section>
+
+    <section>
+      <h2>8. 视频库抽屉</h2>
+      <img src="images/08-video-library-drawer.svg" alt="视频库抽屉状态" />
+      <p>视频库抽屉是资产库的缩小版，可嵌入生成链路调用。抽屉保留搜索、渠道、视频范围、更多筛选 4 个主要控件，右侧展示已选内容。</p>
+    </section>
+
+    <section>
+      <h2>9. 边界状态清单</h2>
+      <table>
+        <thead>
+          <tr><th>场景</th><th>页面表现</th><th>交互规则</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>无合集</td><td>合集（0）+ 新建合集卡片</td><td>可直接创建一级合集</td></tr>
+          <tr><td>合集很多</td><td>默认一行 + 左右翻页</td><td>满一排整排切换，不足一排定位到末尾</td></tr>
+          <tr><td>一级合集 10 个</td><td>新建入口禁用</td><td>提示“合集数量已达上限，最多可创建10个合集”</td></tr>
+          <tr><td>子合集 11 个</td><td>新建子合集禁用</td><td>提示“当前合集下子合集数量已达上限，最多可创建11个子合集”</td></tr>
+          <tr><td>名称 20 字</td><td>计数 20 / 20</td><td>达到上限后不再继续输入</td></tr>
+          <tr><td>名称重复</td><td>输入框报错</td><td>同一层级不允许重名</td></tr>
+          <tr><td>长名称</td><td>单行省略</td><td>Hover 展示 Tooltip 全量内容</td></tr>
+          <tr><td>删除素材</td><td>强确认弹窗</td><td>素材会从全部和所有合集同步删除</td></tr>
+          <tr><td>版权图片</td><td>上方合集正常展示</td><td>版权图片批量操作不显示添加至合集</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

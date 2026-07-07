@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f3f7ff"/>
+  <rect x="84" y="56" width="1112" height="608" rx="28" fill="#fff"/>
+  <text x="126" y="120" font-family="Arial, 'PingFang SC', sans-serif" font-size="32" font-weight="700" fill="#1f2937">进入合集：面包屑表达层级，最多两层子合集</text>
+
+  <g transform="translate(126 166)" font-family="Arial, 'PingFang SC', sans-serif">
+    <text x="0" y="34" font-size="22" font-weight="700" fill="#2f63ff">全部视频</text>
+    <text x="106" y="34" font-size="28" fill="#8a94a6">›</text>
+    <text x="142" y="34" font-size="22" font-weight="700" fill="#2f63ff">债务短视频素材</text>
+    <text x="330" y="34" font-size="28" fill="#8a94a6">›</text>
+    <text x="366" y="34" font-size="22" font-weight="700" fill="#111827">高转化前贴（3）</text>
+  </g>
+
+  <g transform="translate(126 250)">
+    <text x="0" y="0" font-family="Arial, 'PingFang SC', sans-serif" font-size="28" font-weight="700" fill="#111827">合集（1）</text>
+    <rect x="0" y="32" width="250" height="148" rx="10" fill="#f7faff" stroke="#8db0ff" stroke-dasharray="8 8"/>
+    <text x="105" y="92" font-family="Arial" font-size="40" fill="#2f63ff">+</text>
+    <text x="78" y="132" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#2f63ff">新建合集</text>
+    <rect x="294" y="32" width="250" height="148" rx="10" fill="#eef4ff"/>
+    <text x="390" y="110" font-family="Arial" font-size="38" fill="#2f63ff">≡</text>
+    <text x="294" y="216" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#1f2937">投放前贴 0</text>
+    <text x="514" y="216" font-family="Arial" font-size="26" fill="#7a879b">...</text>
+  </g>
+
+  <g transform="translate(126 526)">
+    <text x="0" y="0" font-family="Arial, 'PingFang SC', sans-serif" font-size="30" font-weight="700" fill="#111827">当前合集视频</text>
+    <rect x="0" y="34" width="184" height="110" rx="8" fill="#eef4ff"/>
+    <rect x="220" y="34" width="184" height="110" rx="8" fill="#eef4ff"/>
+    <rect x="440" y="34" width="184" height="110" rx="8" fill="#eef4ff"/>
+    <text x="704" y="94" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#4b5563">合集内多选：仅保留“从合集移除”，不再显示“添加至合集”。</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f3f7ff"/>
+  <rect x="64" y="48" width="1152" height="624" rx="28" fill="#fff"/>
+  <text x="104" y="104" font-family="Arial, 'PingFang SC', sans-serif" font-size="32" font-weight="700" fill="#1f2937">合集数量多：展示总数 + 横向翻页 + 收起/展开</text>
+
+  <g transform="translate(104 150)">
+    <text x="0" y="38" font-family="Arial, 'PingFang SC', sans-serif" font-size="28" font-weight="700" fill="#1f2937">合集（10）</text>
+    <rect x="1000" y="4" width="96" height="44" rx="10" fill="#f3f6fb"/>
+    <text x="1024" y="33" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#2f63ff">收起</text>
+    <text x="1080" y="33" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#2f63ff">⌃</text>
+
+    <rect x="0" y="78" width="250" height="148" rx="10" fill="#f7faff" stroke="#8db0ff" stroke-width="2" stroke-dasharray="8 8"/>
+    <rect x="102" y="112" width="48" height="48" rx="10" fill="#fff"/>
+    <text x="116" y="147" font-family="Arial" font-size="42" fill="#2f63ff">+</text>
+    <text x="80" y="190" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#2f63ff">新建合集</text>
+
+    <g transform="translate(286 78)">
+      <rect width="250" height="148" rx="10" fill="#eef4ff"/>
+      <rect x="10" y="10" width="230" height="86" rx="7" fill="#dfe8f7"/>
+      <text x="100" y="65" font-family="Arial" font-size="38" fill="#2f63ff">≡</text>
+      <text x="0" y="180" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#1f2937">最新合集 99</text>
+      <text x="218" y="180" font-family="Arial" font-size="26" fill="#7a879b">...</text>
+    </g>
+    <g transform="translate(572 78)">
+      <rect width="250" height="148" rx="10" fill="#eef4ff"/>
+      <rect x="10" y="10" width="230" height="86" rx="7" fill="#dfe8f7"/>
+      <text x="100" y="65" font-family="Arial" font-size="38" fill="#2f63ff">≡</text>
+      <text x="0" y="180" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#1f2937">内容合集 12</text>
+      <text x="218" y="180" font-family="Arial" font-size="26" fill="#7a879b">...</text>
+    </g>
+    <g transform="translate(858 78)">
+      <rect width="250" height="148" rx="10" fill="#eef4ff"/>
+      <rect x="10" y="10" width="230" height="86" rx="7" fill="#dfe8f7"/>
+      <text x="100" y="65" font-family="Arial" font-size="38" fill="#2f63ff">≡</text>
+      <text x="0" y="180" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#1f2937">历史合集 0</text>
+      <text x="218" y="180" font-family="Arial" font-size="26" fill="#7a879b">...</text>
+    </g>
+
+    <circle cx="18" cy="152" r="24" fill="#fff" filter="drop-shadow(0 8px 18px rgba(40,80,160,.16))"/>
+    <text x="10" y="161" font-family="Arial" font-size="28" fill="#637083">‹</text>
+    <circle cx="1130" cy="152" r="24" fill="#fff" filter="drop-shadow(0 8px 18px rgba(40,80,160,.16))"/>
+    <text x="1123" y="161" font-family="Arial" font-size="28" fill="#637083">›</text>
+
+    <line x1="0" y1="330" x2="1096" y2="330" stroke="#e6ecf6"/>
+    <text x="0" y="382" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#1f2937">展示规则</text>
+    <text x="0" y="424" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#4b5563">1. 默认展示一行，合集较多时出现左右翻页；不足一行时不显示箭头。</text>
+    <text x="0" y="462" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#4b5563">2. 越新建的合集越靠近“新建合集”，排在越前面。</text>
+    <text x="0" y="500" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#4b5563">3. 点击右箭头：满一排则整排切换；不足一排则定位到最后一个合集。</text>
+  </g>
+</svg>

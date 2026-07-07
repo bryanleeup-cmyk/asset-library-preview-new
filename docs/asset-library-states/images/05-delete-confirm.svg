@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#d9e0ea"/>
+  <rect x="270" y="126" width="740" height="448" rx="18" fill="#fff"/>
+  <text x="330" y="204" font-family="Arial, 'PingFang SC', sans-serif" font-size="34" font-weight="700" fill="#111827">确认删除合集？</text>
+  <text x="948" y="200" font-family="Arial" font-size="40" fill="#6b7280">×</text>
+  <rect x="330" y="244" width="620" height="112" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="358" y="286" font-family="Arial, 'PingFang SC', sans-serif" font-size="22" font-weight="700" fill="#9a3412">删除合集不会删除素材本身</text>
+  <text x="358" y="326" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#4b5563">删除后，该合集及其子合集将被移除；其中的视频 / 图片会回到“全部视频 / 全部图片”。</text>
+
+  <text x="330" y="410" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" fill="#6b7280">适用场景：合集菜单点击“删除”、删除含子合集的合集、误操作风险较高的情况。</text>
+  <rect x="606" y="486" width="142" height="58" rx="10" fill="#f0f3fa"/>
+  <text x="652" y="523" font-family="Arial, 'PingFang SC', sans-serif" font-size="23" fill="#1f2937">取消</text>
+  <rect x="770" y="486" width="180" height="58" rx="10" fill="#ff4d4f"/>
+  <text x="815" y="523" font-family="Arial, 'PingFang SC', sans-serif" font-size="23" font-weight="700" fill="#fff">确认删除</text>
+</svg>
